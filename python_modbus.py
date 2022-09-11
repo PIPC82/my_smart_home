@@ -23,8 +23,8 @@ while True:
         print('Error modbus -TypeError-')
     
     print("==========31=============")    
-    print(temp1/10)
-    print(hum1/10) 
+    print(str(temp1/10) + ' C')
+    print(str(hum1/10) + ' %') 
      
     time.sleep(0.5)
 
@@ -38,5 +38,6 @@ while True:
     except TypeError:
         print('Error modbus2 -TypeError-')
     print("==========32=============")    
-    print(temp2/10)        
+    print(str(temp2/10) + ' C')        
+    print(str(hum2/10) + ' %')        
     print(hum2/10)   
